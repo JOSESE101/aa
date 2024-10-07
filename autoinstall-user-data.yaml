@@ -1,14 +1,10 @@
 #cloud-config
 autoinstall:
   version: 1
-
-  source:
-    id: ubuntu-server-minimal
-
   locale: es_ES.UTF-8
   keyboard:
-    layout: us
-  timezone: Europe/Rome
+    layout: es
+  timezone: Europe/Madrid
 
   network:
     version: 2
@@ -17,18 +13,6 @@ autoinstall:
         dhcp4: true
 
   identity:
-    username: a
-    hostname: a
-    password: 'a'
-
-
-  packages:
-    - git
-    - python3-pip
-
-  snaps:
-    - name: pycharm-community
-      channel: stable 
-      classic: true
-
-  shutdown: reboot
+    username: usuario
+    hostname: usuarioubuntu
+    password: 'usuario'
